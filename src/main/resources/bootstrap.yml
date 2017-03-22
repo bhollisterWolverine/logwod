@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  
+zuul:
+  sensitive-headers: Cookie,Set-Cookie
+    
+
+logging:
+  level:
+    root: INFO 
+    org.springframework.security: debug
+    
+debug: false
+
+spring:
+  application:
+    name: gateway
+   
+  
+security:
+    basic:
+        enabled: false          
+            
