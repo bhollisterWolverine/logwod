@@ -20,4 +20,5 @@ spring:
 security:
     basic:
         enabled: false          
-            
+          
+    

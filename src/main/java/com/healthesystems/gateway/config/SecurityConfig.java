@@ -43,8 +43,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter  {
 	public BindAuthenticator authenticator(){
 		BindAuthenticator authenticator = new BindAuthenticator(ldapContextSource());
 		authenticator.setUserSearch(userSearch());
-		//authenticator.setUserDnPatterns(new String[]{"cn={0},OU=Centrepointe,OU=Employee Accounts,OU=HealthESystems,dc=tampa,dc=healthe"});
-		//authenticator.setUserAttributes(new String[]{"memberOf"});
 		return authenticator;
 	}
 	
