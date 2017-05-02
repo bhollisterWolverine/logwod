@@ -2,3 +2,17 @@ zuul:
   routes:
     ng-test:
       url: http://localhost:8082/ng-test/
+    customer-manager-svc:
+      url: http://localhost:9000/
+spring:
+  session:
+    store-type: redis
+  redis:
+    host: localhost
+    port: 6379   
+  datasource:
+    url: jdbc:sqlserver://sql-dev01.test.healthe:14331;databaseName=customer;
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver 
+    username: customer
+    password: bogey8
+    

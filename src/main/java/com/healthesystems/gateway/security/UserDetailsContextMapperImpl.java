@@ -1,4 +1,4 @@
-package com.healthesystems.security;
+package com.healthesystems.gateway.security;
 import java.util.ArrayList;
 import java.util.Collection;
 

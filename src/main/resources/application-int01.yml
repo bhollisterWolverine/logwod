@@ -2,3 +2,13 @@ zuul:
   routes:
     ng-test:
       url: http://red-gateui1i01.test.healthe:8502/ng-test/
+    customer-manager:
+      url: http://red-gateui1i01.test.healthe:8502/customer-manager-ui/
+    customer-manager-service:
+      url: http://red-gateui1i01.test.healthe:8502/customer-manager-ui/
+spring:
+  session:
+    store-type: redis
+  redis:
+    host: localhost
+    port: 6379

@@ -1,24 +1,16 @@
+security:
+  sessions: ALWAYS
 server:
   port: 8080
-  
 zuul:
-  sensitive-headers: Cookie,Set-Cookie
-    
-
+  sensitive-headers:
 logging:
   level:
+    com.healthesystems: DEBUG
     root: INFO 
-    org.springframework.security: debug
-    
-debug: false
-
+    org.springframework.security: DEBUG
 spring:
   application:
-    name: gateway
-   
-  
-security:
-    basic:
-        enabled: false          
+    name: gateway          
           
     

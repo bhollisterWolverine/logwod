@@ -1,107 +1,70 @@
 package com.healthesystems.gateway.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.ldap.core.support.LdapContextSource;
-import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.core.annotation.Order;
+import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.ldap.authentication.BindAuthenticator;
-import org.springframework.security.ldap.authentication.LdapAuthenticationProvider;
-import org.springframework.security.ldap.search.FilterBasedLdapUserSearch;
-import org.springframework.security.ldap.userdetails.DefaultLdapAuthoritiesPopulator;
 import org.springframework.security.web.authentication.Http403ForbiddenEntryPoint;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
-import com.healthesystems.security.UserDetailsContextMapperImpl;
+import com.healthesystems.gateway.security.AuthSuccessHandler;
+import com.healthesystems.gateway.security.CustomAuthenticationProvider;
+import com.healthesystems.gateway.security.HttpAuthenticationEntryPoint;
 
 @Configuration
-@EnableGlobalMethodSecurity(prePostEnabled = true)
 @EnableWebSecurity
-public class SecurityConfig extends WebSecurityConfigurerAdapter  {
+@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-	
-	@Bean 
-	public UserDetailsContextMapperImpl userDetailsContextMapperImpl(){
-		return new UserDetailsContextMapperImpl();
-	}
-	
+	@Autowired
+	@Qualifier("authSuccessHandler")
+	private AuthSuccessHandler authSuccessHandler;
+
+	@Autowired
+	private HttpAuthenticationEntryPoint httpAuthenticationEntryPoint;
 
 	@Bean
-	public LdapContextSource ldapContextSource(){
-		LdapContextSource ldapContextSource = new LdapContextSource();
-		ldapContextSource.setUrl("ldap://tampa.healthe:389/");
-		ldapContextSource.setUserDn("cn=LDAP Reader,ou=Generic Accounts,ou=HealthESystems,dc=tampa,dc=Healthe");
-		ldapContextSource.setPassword("Y1yZ5IAn");
-		
-		return ldapContextSource;
+	public AuthenticationProvider customAuthenticationProvider() {
+		return new CustomAuthenticationProvider();
 	}
 	
-	@Bean
-	public BindAuthenticator authenticator(){
-		BindAuthenticator authenticator = new BindAuthenticator(ldapContextSource());
-		authenticator.setUserSearch(userSearch());
-		return authenticator;
-	}
-	
-	@Bean
-	public DefaultLdapAuthoritiesPopulator ldapAuthoritiesPopulator(){
-		DefaultLdapAuthoritiesPopulator ldapAuthoritiesPopulator = new DefaultLdapAuthoritiesPopulator(ldapContextSource(),"ou=HealthESystems,dc=tampa,dc=healthe");
-		ldapAuthoritiesPopulator.setGroupRoleAttribute("cn");
-		ldapAuthoritiesPopulator.setGroupSearchFilter("(member={0})");
-		ldapAuthoritiesPopulator.setSearchSubtree(true);
-		ldapAuthoritiesPopulator.setRolePrefix("");
-		return ldapAuthoritiesPopulator;
-		
-	}
-	
-	@Bean
-	public FilterBasedLdapUserSearch userSearch(){
-		FilterBasedLdapUserSearch filterBasedLdapUserSearch = new FilterBasedLdapUserSearch("ou=HealthESystems,dc=tampa,dc=healthe", "(sAMAccountName={0})", ldapContextSource());
-	    filterBasedLdapUserSearch.setSearchSubtree(true);
-	    return filterBasedLdapUserSearch;
-	}
-	
-	@Bean
-	public LdapAuthenticationProvider ldapAuthenticationProvider(){
-		LdapAuthenticationProvider ldapAuthenticationProvider = new LdapAuthenticationProvider(authenticator(),ldapAuthoritiesPopulator());
-		ldapAuthenticationProvider.setUserDetailsContextMapper(userDetailsContextMapperImpl());
-		return ldapAuthenticationProvider;
-	}
-	
-	@Bean
-    @Override
-    public AuthenticationManager authenticationManagerBean() throws Exception {
-        return super.authenticationManagerBean();
-    }
-
 	@Bean
 	public Http403ForbiddenEntryPoint http403EntryPoint(){
 		return new Http403ForbiddenEntryPoint();
 	}
 
+	@Override
+	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+		auth.authenticationProvider(customAuthenticationProvider());
+
+	}
+
+	public ShaPasswordEncoder passwordEncoder() {
+		return new ShaPasswordEncoder();
+	}
 
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
 		// @formatter:off
 		http
-			.httpBasic().and()
-			.formLogin().loginPage("/login.html").permitAll()
+		.httpBasic().and()
+		.formLogin().loginPage("/login.html").permitAll().successHandler(authSuccessHandler)
+		.and()
+		.logout().and()
+		.authorizeRequests()
+			.antMatchers("/resources/**").permitAll()
+			.anyRequest().authenticated()
 			.and()
-			.logout().and()
-			.authorizeRequests()
-				.antMatchers("/resources/**").permitAll()
-				.anyRequest().authenticated()
-				.and()
-			.csrf().disable();
+		.csrf().disable();
 		// @formatter:on
 	}
-	
-
-	@Override
-	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-	    auth.authenticationProvider(ldapAuthenticationProvider());
-	}  
 }
