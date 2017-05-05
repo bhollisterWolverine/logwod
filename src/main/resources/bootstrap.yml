@@ -2,11 +2,7 @@ security:
   sessions: ALWAYS
 server:
   port: 8080
-  
-logging:
-  level:
-    com.healthesystems: DEBUG
-    org.springframework.security: DEBUG
+ 
 spring:
   application:
     name: gateway          

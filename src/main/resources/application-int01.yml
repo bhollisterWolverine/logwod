@@ -17,3 +17,7 @@ spring:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver 
     username: customer
     password: bogey8    
+logging:
+  level:
+    com.healthesystems: DEBUG
+    org.springframework.security: INFO
