@@ -2,12 +2,10 @@ security:
   sessions: ALWAYS
 server:
   port: 8080
-zuul:
-  sensitive-headers:
+  
 logging:
   level:
     com.healthesystems: DEBUG
-    root: INFO 
     org.springframework.security: DEBUG
 spring:
   application:

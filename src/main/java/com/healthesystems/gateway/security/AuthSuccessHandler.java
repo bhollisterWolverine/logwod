@@ -20,11 +20,12 @@ public class AuthSuccessHandler extends SavedRequestAwareAuthenticationSuccessHa
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
             Authentication authentication) throws IOException, ServletException {
-        response.setStatus(HttpServletResponse.SC_OK);
 
         logger.debug("User {} connected successfully", authentication.getName());
         for (GrantedAuthority granted: authentication.getAuthorities()){
 			logger.debug("User Roles: {}", granted.getAuthority());
 		}
+        
+        super.onAuthenticationSuccess(request, response, authentication);
     }
 }
