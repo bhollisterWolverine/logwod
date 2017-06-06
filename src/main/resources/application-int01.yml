@@ -1,7 +1,7 @@
 zuul:
   routes:
     ng-test:
-      url: http://red-gateui1i01.test.healthe:8502/ng-test/index.html
+      url: http://red-gateui1i01.test.healthe:8502/ng-test/
     customer-manager:
       url: http://red-gateui1i01.test.healthe:8502/
     customer-manager-service:
