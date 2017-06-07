@@ -1,7 +1,8 @@
 zuul:
-  routes:
+   routes:
     ng-test:
       url: http://red-gateui1i01.test.healthe:8502/ng-test/
+      sensitive-headers:
     customer-manager:
       url: http://red-gateui1i01.test.healthe:8502/
     customer-manager-service:
