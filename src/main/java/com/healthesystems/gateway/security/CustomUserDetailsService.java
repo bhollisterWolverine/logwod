@@ -34,8 +34,8 @@ public class CustomUserDetailsService extends JdbcDaoImpl {
 
 	@Override
 	@Value("SELECT  u.user_name as user_name,  r.Role_name role_name"
-            + "    FROM  HES_Config.dbo.Role r "
-            + "    INNER JOIN HES_Config.dbo.User_Role ur ON ur.Role_ID = r.Role_ID "
+            + "    FROM  Role r "
+            + "    INNER JOIN User_Role ur ON ur.Role_ID = r.Role_ID "
             + "    INNER JOIN Users u ON u.User_ID = ur.User_ID "
             + "    WHERE u.User_Name = ? ")
 	public void setAuthoritiesByUsernameQuery(String queryString) {

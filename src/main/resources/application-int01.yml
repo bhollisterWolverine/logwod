@@ -14,7 +14,7 @@ spring:
     host: localhost
     port: 6379
   datasource:
-    url: jdbc:sqlserver://sql-int01.test.healthe:14331;databaseName=customer;
+    url: jdbc:sqlserver://sql-int01.test.healthe:14331;databaseName=HES_Config;
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver 
     username: customer
     password: bogey8    

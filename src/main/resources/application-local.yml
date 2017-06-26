@@ -14,11 +14,15 @@ spring:
     host: localhost
     port: 6379   
   datasource:
-    url: jdbc:sqlserver://sql-dev01.test.healthe:14331;databaseName=customer;
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver 
-    username: customer
-    password: bogey8
+    url: jdbc:h2:mem:HES_Config;
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+    initialize: true 
+    schema: classpath:/schema-h2.sql
+    data: classpath:/data-h2.sql
 logging:
   level:
     com.healthesystems: DEBUG
-    org.springframework.security: DEBUG    
+    org.springframework.security: DEBUG
+    org.springframework: INFO    
