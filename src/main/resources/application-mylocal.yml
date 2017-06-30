@@ -1,0 +1,28 @@
+zuul:
+  routes:
+    ng-test:
+      url: http://localhost:8082/ng-test/
+      sensitive-headers:
+    customer-manager-svc:
+      path: /customer-manager-service/**
+      url: http://localhost:9000/
+      sensitive-headers:
+spring:
+  session:
+    store-type: redis
+  redis:
+    host: localhost
+    port: 6379   
+  datasource:
+    url: jdbc:h2:mem:HES_Config;
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+    initialize: true 
+    schema: classpath:/schema-h2.sql
+    data: classpath:/data-h2.sql
+logging:
+  level:
+    com.healthesystems: DEBUG
+    org.springframework.security: DEBUG
+    org.springframework: INFO    
