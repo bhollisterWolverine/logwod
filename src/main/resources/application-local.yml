@@ -2,8 +2,10 @@ zuul:
   routes:
     dm-service:
           url: http://localhost:8080/dm-service/
+          sensitive headers:
     dm-ui:
       url: http://localhost:4200/
+      sensitive headers:
 spring:
   session:
     store-type: redis
