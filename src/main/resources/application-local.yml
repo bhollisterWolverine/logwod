@@ -1,12 +1,9 @@
 zuul:
   routes:
-    ng-test:
-      url: http://localhost:8082/ng-test/
-      sensitive-headers:
-    customer-manager-svc:
-      path: /customer-manager-service/**
-      url: http://localhost:9000/
-      sensitive-headers:
+    dm-service:
+          url: http://localhost:8080/dm-service/
+    dm-ui:
+      url: http://localhost:4200/
 spring:
   session:
     store-type: redis
