@@ -1,16 +1,16 @@
 zuul:
    routes:
     ng-test:
-      url: http://red-gateui1i01.test.healthe:8502/ng-test/
+      url: http://127.0.0.1:8502/ng-test/
       sensitive-headers:
     customer-manager:
-      url: http://red-gateui1i01.test.healthe:8502/
+      url: http://127.0.0.1:8502/
     customer-manager-service:
-      url: http://red-gateui1i01.test.healthe:8504/
+      url: http://127.0.0.1:8504/
     dm-service:
-      url: http://red-abmdm1i01.test.healthe:8500/dm-service/
+      url: http://127.0.0.1:8500/dm-service/
     dm-ui:
-      url: http://red-abmdm1i01.test.healthe:8502/dm-ui/
+      url: http://127.0.0.1:8502/dm-ui/
 spring:
   session:
     store-type: redis
