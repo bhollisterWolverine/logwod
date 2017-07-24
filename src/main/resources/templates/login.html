@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Healthesystems</title>
+    <title id="pageTitle">Healthesystems</title>
     <!-- Bootstrap -->
     <link href="resources/bootstrap.min.css" rel="stylesheet"/>
     <link href="resources/style.css" rel="stylesheet"/>
@@ -16,30 +16,30 @@
     <section class="login-section container">
         <div class="row">
             <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2">
-                <form name="form" th:action="@{/login}" method="post" action="/login" class="form-login">
-                    <p class="text-center"><img src="resources/healthesystems.png" alt="Healthesystems" /></p>
-                    <div th:if="${param.error}" class="alert alert-danger">
+                <form id="pageForm" name="form" th:action="@{/login}" method="post" action="/login" class="form-login">
+                    <p class="text-center"><img src="resources/healthesystems.png" alt="Healthesystems" id="hesLogo" /></p>
+                    <div th:if="${param.error}" class="alert alert-danger" id="invalid-user">
                         Invalid username and password.
                     </div>
                     <div class="form-group">
-                        <input type="text" name="username" class="form-control input-lg" placeholder="Username" autocomplete="off" />
+                        <input type="text" name="username" class="form-control input-lg" placeholder="Username" autocomplete="off" id="input-username"/>
                     </div>
                     <div class="form-group">
-                        <input type="password" name="password" class="form-control input-lg" placeholder="Password" autocomplete="off" />
+                        <input type="password" name="password" class="form-control input-lg" placeholder="Password" autocomplete="off" id="input-password"/>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" value="on" id="gwt-uid-1"/> Remember me
+                            <input type="checkbox" value="on" id="input-remember-me"/> Remember me
                         </label>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" id="buttom-Login">Login</button>
                     </div>
-                    <p class="text-center"><a href="#">Forgot Password</a></p>
-                    <p class="text-center"><small>If you are having a problem logging in, contact Customer Service Center at <strong>800.758.5779</strong> or email <a href="mailto:support@healthesystems.com">support@healthesystems.com</a></small></p>
+                    <p class="text-center"><a href="#" id="link-forgot-password">Forgot Password</a></p>
+                    <p class="text-center" id="text-problems-logging-in"><small>If you are having a problem logging in, contact Customer Service Center at <strong>800.758.5779</strong> or email <a href="mailto:support@healthesystems.com">support@healthesystems.com</a></small></p>
                 </form>
-                <p class="text-center"><small>Copyright &copy; 2009-2016 Healthesystems, LLC. All rights reserved<br />
-          <a class="hes_anchor" href="http://www.healthesystems.com/privacy-policy.aspx" target="_blank" title="Privacy Statement &amp; Terms of Use">Privacy Statement &amp; Terms of Use</a></small></p>
+                <p class="text-center" id="text-copyright"><small>Copyright &copy; 2009-2016 Healthesystems, LLC. All rights reserved<br />
+          <a id="link-privacy-policy" class="hes_anchor" href="http://www.healthesystems.com/privacy-policy.aspx" target="_blank" title="Privacy Statement &amp; Terms of Use">Privacy Statement &amp; Terms of Use</a></small></p>
             </div>
         </div>
     </section>
