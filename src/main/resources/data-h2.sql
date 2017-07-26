@@ -18,6 +18,3 @@ SELECT 2, 12, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
 SELECT 3, 12, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
-
-asdfasdfasdf
-asdfasdfasd
