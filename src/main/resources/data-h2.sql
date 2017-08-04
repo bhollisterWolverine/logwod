@@ -11,6 +11,8 @@ SELECT 1, 1, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', 
 INSERT INTO Role(Role_ID, Role_Name, Role_Desc, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
 SELECT 2, 'RULES_MGR', 'Account Management', '2010-10-26 00:00:00.000', '9999-12-31 00:00:00.000', 'fcarringto', '2010-10-26 08:14:34.110', 'dferry', '2010-12-06 08:48:29.497', 'Rules Manager';
 
+INSERT INTO Role(Role_ID, Role_Name, Role_Desc, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
+SELECT 3, 'INVOICE_MGR', 'Invoice Management', '2010-10-26 00:00:00.000', '9999-12-31 00:00:00.000', 'fcarringto', '2010-10-26 08:14:34.110', 'dferry', '2010-12-06 08:48:29.497', 'Invoice Manager';
 
 
 INSERT INTO users(User_ID, user_name, user_pass, email, first_name, last_name, access_denied, touched, do_nothing, last_login_date, login_count, failed_logins, customer_id, roster_access, resolution_access, superuser_access, email_sent, epaq_access, image_access, elig_access, report_access, mail_order_access, manager_access, dme_access, ex02_access, ipe_access, user_manager_access, modified_by, modified_date, phone, cae_access, region, rxcard_access, eob_access, accounting_access, customer_user_number, job_title, supervisor_first_name, supervisor_last_name, supervisor_email, inactive_date, sensitive_flag, appeal_assignment_access, abm_catalog_access, abm_read_only_access, version_ind, reset, bvd_special_access, super_pharmacist_access, ABM_Access, User_Created, Date_Time_Created, Form_ID, Recon_Access, Related_User_ID, Supervisor_Phone, Welcome_Email_Sent_Flag, Update_Claim_Data_Flag, Send_Welcome_Email_Flag, ABM_Referral_Read_Only_Access_Flag, RMD_Access_Flag, Customer_User_Group_ID)
@@ -58,6 +60,9 @@ SELECT 9, 5, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'hfreeman'
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
 SELECT 10, 5, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'hfreeman', '2010-11-16 10:35:53.127', 'hfreeman', '2010-11-16 10:35:53.127', 'User Manager';
+
+INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
+SELECT 19, 5, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'hfreeman', '2010-11-16 10:35:53.127', 'hfreeman', '2010-11-16 10:35:53.127', 'User Manager';
 
 
 INSERT INTO users(User_ID, user_name, user_pass, email, first_name, last_name, access_denied, touched, do_nothing, last_login_date, login_count, failed_logins, customer_id, roster_access, resolution_access, superuser_access, email_sent, epaq_access, image_access, elig_access, report_access, mail_order_access, manager_access, dme_access, ex02_access, ipe_access, user_manager_access, modified_by, modified_date, phone, cae_access, region, rxcard_access, eob_access, accounting_access, customer_user_number, job_title, supervisor_first_name, supervisor_last_name, supervisor_email, inactive_date, sensitive_flag, appeal_assignment_access, abm_catalog_access, abm_read_only_access, version_ind, reset, bvd_special_access, super_pharmacist_access, ABM_Access, User_Created, Date_Time_Created, Form_ID, Recon_Access, Related_User_ID, Supervisor_Phone, Welcome_Email_Sent_Flag, Update_Claim_Data_Flag, Send_Welcome_Email_Flag, ABM_Referral_Read_Only_Access_Flag, RMD_Access_Flag, Customer_User_Group_ID)
