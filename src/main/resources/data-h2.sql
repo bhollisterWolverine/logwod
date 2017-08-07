@@ -95,7 +95,7 @@ INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Terminatio
 SELECT 14, 7, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 26, 7, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 27, 7, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 
 INSERT INTO users(User_ID, user_name, user_pass, email, first_name, last_name, access_denied, touched, do_nothing, last_login_date, login_count, failed_logins, customer_id, roster_access, resolution_access, superuser_access, email_sent, epaq_access, image_access, elig_access, report_access, mail_order_access, manager_access, dme_access, ex02_access, ipe_access, user_manager_access, modified_by, modified_date, phone, cae_access, region, rxcard_access, eob_access, accounting_access, customer_user_number, job_title, supervisor_first_name, supervisor_last_name, supervisor_email, inactive_date, sensitive_flag, appeal_assignment_access, abm_catalog_access, abm_read_only_access, version_ind, reset, bvd_special_access, super_pharmacist_access, ABM_Access, User_Created, Date_Time_Created, Form_ID, Recon_Access, Related_User_ID, Supervisor_Phone, Welcome_Email_Sent_Flag, Update_Claim_Data_Flag, Send_Welcome_Email_Flag, ABM_Referral_Read_Only_Access_Flag, RMD_Access_Flag, Customer_User_Group_ID)
