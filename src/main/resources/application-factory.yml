@@ -1,16 +1,16 @@
 zuul:
    routes:
     ng-test:
-      url: http://127.0.0.1:8502/ng-test/
+      url: http://sot-devops1043.test.healthe:8502/ng-test/
       sensitive-headers:
     customer-manager:
-      url: http://127.0.0.1:8502/
+      url: http://sot-devops1043.test.healthe:8502/
     customer-manager-service:
-      url: http://127.0.0.1:8504/
+      url: http://sot-devops1043.test.healthe:8504/
     dm-service:
-      url: http://127.0.0.1:8500/dm-service/
+      url: http://sot-devops1043.test.healthe:8500/dm-service/
     dm-ui:
-      url: http://127.0.0.1:8502/dm-ui/
+      url: http://sot-devops1043.test.healthe:8502/dm-ui/
 spring:
   session:
     store-type: redis
@@ -18,10 +18,10 @@ spring:
     host: localhost
     port: 6379
   datasource:
-    url: jdbc:sqlserver://sql-int01.test.healthe:14331;databaseName=HES_Config;
+    url: jdbc:sqlserver://sot-devops1043.test.healthe:1433;databaseName=HES_Config;
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver 
-    username: customer
-    password: bogey8    
+    username: developer
+    password: letmein999 
 logging:
   level:
     com.healthesystems: DEBUG
