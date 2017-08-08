@@ -11,11 +11,11 @@ spring:
     host: localhost
     port: 6379
   datasource:
-    url: jdbc:sqlserver://sql-uat01.test.healthe:14331;databaseName=HES_Config;
+    url: jdbc:sqlserver://SQL-oltp1.tampa.healthe:1433;databaseName=HES_Config;
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver 
-    username: customer
-    password: bogey8    
+    username: DM_App_User
+    password: Hmsn73h&sh3Ms*Ksdfi3   
 logging:
   level:
-    com.healthesystems: DEBUG
+    com.healthesystems: INFO
     org.springframework.security: INFO
