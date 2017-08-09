@@ -1,12 +1,9 @@
 zuul:
   routes:
-    ng-test:
-      url: http://localhost:8082/ng-test/
-      sensitive-headers:
-    customer-manager-svc:
-      path: /customer-manager-service/**
-      url: http://localhost:9000/
-      sensitive-headers:
+    dm-service:
+      url: http://localhost:8080/dm-service/
+    dm-ui:
+      url: http://localhost:4200/
 spring:
   session:
     store-type: redis
@@ -17,10 +14,15 @@ spring:
     url: jdbc:h2:mem:HES_Config;
     driver-class-name: org.h2.Driver
     username: sa
-    password: 
-    initialize: true 
+    password:
+    initialize: true
     schema: classpath:/schema-h2.sql
     data: classpath:/data-h2.sql
+#  datasource:
+#    url: jdbc:sqlserver://sql-int01.test.healthe:14331;databaseName=HES_Config;
+#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    username: customer
+#    password: bogey8
 logging:
   level:
     com.healthesystems: DEBUG

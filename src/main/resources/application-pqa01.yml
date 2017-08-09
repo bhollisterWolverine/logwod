@@ -1,0 +1,21 @@
+zuul:
+   routes:
+    dm-service:
+      url: http://pqa-abmdm1hr1.test.healthe:8500/dm-service/
+    dm-ui:
+      url: http://pqa-abmdm1hr1.test.healthe:8502/dm-ui/
+spring:
+  session:
+    store-type: redis
+  redis:
+    host: localhost
+    port: 6379
+  datasource:
+    url: jdbc:sqlserver://SQL-pqa01.test.healthe:14332;databaseName=HES_Config;
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver 
+    username: DM_App_User
+    password: 9g#skdaJ&h5dlH5S2kjh    
+logging:
+  level:
+    com.healthesystems: DEBUG
+    org.springframework.security: INFO
