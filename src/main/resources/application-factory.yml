@@ -18,10 +18,18 @@ spring:
     host: localhost
     port: 6379
   datasource:
-    url: jdbc:sqlserver://sot-devops1043.test.healthe:1433;databaseName=HES_Config;
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver 
-    username: developer
-    password: letmein999 
+    url: jdbc:h2:mem:HES_Config;
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+    initialize: true
+    schema: classpath:/schema-h2.sql
+    data: classpath:/data-h2.sql
+#  datasource:
+#    url: jdbc:sqlserver://sot-devops1043.test.healthe:1433;databaseName=HES_Config;
+#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver 
+#    username: developer
+#    password: letmein999 
 logging:
   level:
     com.healthesystems: DEBUG
