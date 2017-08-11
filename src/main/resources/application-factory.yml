@@ -10,7 +10,7 @@ zuul:
     dm-service:
       url: http://sot-devops1043.test.healthe:8500/dm-service/
     dm-ui:
-      url: http://sot-devops1043.test.healthe:8502/dm-ui/
+      url: http://sot-devops1043.test.healthe:8505/dm-ui/
 spring:
   session:
     store-type: redis
