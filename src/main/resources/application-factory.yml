@@ -1,9 +1,9 @@
 zuul:
    routes:
     dm-service:
-      url: http://sot-devops1043.test.healthe:8500/dm-service/
+      url: http://localhost:8500/dm-service/
     dm-ui:
-      url: http://sot-devops1043.test.healthe:8502/dm-ui/
+      url: http://localhost:8502/dm-ui/
 spring:
   session:
     store-type: redis
