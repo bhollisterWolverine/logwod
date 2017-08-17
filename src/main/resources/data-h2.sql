@@ -160,10 +160,10 @@ INSERT INTO users(User_ID, user_name, user_pass, email, first_name, last_name, a
 SELECT 13, 'asaluja', '0a06f72a10a4a572d4e22a951dc1859083e87de5', 'qaqtp01@healthesystems.com', 'Automation', 'Tester', '', '', '', '2012-09-17 14:13:28.900', 0, 0, '', 'Y', 'Y', 'Y', NULL, 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', '', '', 'TAMPA\ereardo', '2011-02-28 16:40:23.850', '7777777777', 'Y', NULL, '', '', '', NULL, NULL, '', '', '', NULL, '', '', '', '', '0', '', '', '', 'Y', 'Post Script', '2011-01-18 11:38:19.003', 'Post Script', '', NULL, '', '', '', '', '', '', NULL;
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 37, 13, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 37, 13, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'asaluja', '2010-11-16 10:35:53.127', 'asaluja', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 38, 13, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 38, 13, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'asaluja', '2010-11-16 10:35:53.127', 'asaluja', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 39, 13, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 39, 13, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'asaluja', '2010-11-16 10:35:53.127', 'asaluja', '2010-11-16 10:35:53.127', 'User Manager';
