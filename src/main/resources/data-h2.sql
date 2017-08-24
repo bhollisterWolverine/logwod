@@ -69,16 +69,16 @@ SELECT 4, 'snelson', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'snelson@health
 
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 12, 4, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'snelson', '2010-11-16 10:35:53.127', 'snelson', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 13, 4, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'snelson', '2010-11-16 10:35:53.127', 'snelson', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 13, 4, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'snelson', '2010-11-16 10:35:53.127', 'snelson', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 14, 4, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'snelson', '2010-11-16 10:35:53.127', 'snelson', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 14, 4, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'snelson', '2010-11-16 10:35:53.127', 'snelson', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 15, 4, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'snelson', '2010-11-16 10:35:53.127', 'snelson', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 15, 4, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 16, 4, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 
 INSERT INTO users(User_ID, user_name, user_pass, email, first_name, last_name, access_denied, touched, do_nothing, last_login_date, login_count, failed_logins, customer_id, roster_access, resolution_access, superuser_access, email_sent, epaq_access, image_access, elig_access, report_access, mail_order_access, manager_access, dme_access, ex02_access, ipe_access, user_manager_access, modified_by, modified_date, phone, cae_access, region, rxcard_access, eob_access, accounting_access, customer_user_number, job_title, supervisor_first_name, supervisor_last_name, supervisor_email, inactive_date, sensitive_flag, appeal_assignment_access, abm_catalog_access, abm_read_only_access, version_ind, reset, bvd_special_access, super_pharmacist_access, ABM_Access, User_Created, Date_Time_Created, Form_ID, Recon_Access, Related_User_ID, Supervisor_Phone, Welcome_Email_Sent_Flag, Update_Claim_Data_Flag, Send_Welcome_Email_Flag, ABM_Referral_Read_Only_Access_Flag, RMD_Access_Flag, Customer_User_Group_ID)
@@ -86,16 +86,16 @@ SELECT 5, 'hcherukuru', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'hcherukuru@
 
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 16, 5, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', '2010-11-16 10:35:53.127', 'dferry', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 17, 5, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', '2010-11-16 10:35:53.127', 'dferry', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 17, 5, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', '2010-11-16 10:35:53.127', 'dferry', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 18, 5, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', '2010-11-16 10:35:53.127', 'dferry', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 18, 5, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', '2010-11-16 10:35:53.127', 'dferry', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 19, 5, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', '2010-11-16 10:35:53.127', 'dferry', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 19, 5, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 20, 5, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 
 INSERT INTO users(User_ID, user_name, user_pass, email, first_name, last_name, access_denied, touched, do_nothing, last_login_date, login_count, failed_logins, customer_id, roster_access, resolution_access, superuser_access, email_sent, epaq_access, image_access, elig_access, report_access, mail_order_access, manager_access, dme_access, ex02_access, ipe_access, user_manager_access, modified_by, modified_date, phone, cae_access, region, rxcard_access, eob_access, accounting_access, customer_user_number, job_title, supervisor_first_name, supervisor_last_name, supervisor_email, inactive_date, sensitive_flag, appeal_assignment_access, abm_catalog_access, abm_read_only_access, version_ind, reset, bvd_special_access, super_pharmacist_access, ABM_Access, User_Created, Date_Time_Created, Form_ID, Recon_Access, Related_User_ID, Supervisor_Phone, Welcome_Email_Sent_Flag, Update_Claim_Data_Flag, Send_Welcome_Email_Flag, ABM_Referral_Read_Only_Access_Flag, RMD_Access_Flag, Customer_User_Group_ID)
@@ -103,16 +103,16 @@ SELECT 6, 'hfreeman', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'hfreeman@heal
 
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 20, 6, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'hfreeman', '2010-11-16 10:35:53.127', 'hfreeman', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 21, 6, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'hfreeman', '2010-11-16 10:35:53.127', 'hfreeman', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 21, 6, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'hfreeman', '2010-11-16 10:35:53.127', 'hfreeman', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 22, 6, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'hfreeman', '2010-11-16 10:35:53.127', 'hfreeman', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 22, 6, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'hfreeman', '2010-11-16 10:35:53.127', 'hfreeman', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 23, 6, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'hfreeman', '2010-11-16 10:35:53.127', 'hfreeman', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 23, 6, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 24, 6, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 
 INSERT INTO users(User_ID, user_name, user_pass, email, first_name, last_name, access_denied, touched, do_nothing, last_login_date, login_count, failed_logins, customer_id, roster_access, resolution_access, superuser_access, email_sent, epaq_access, image_access, elig_access, report_access, mail_order_access, manager_access, dme_access, ex02_access, ipe_access, user_manager_access, modified_by, modified_date, phone, cae_access, region, rxcard_access, eob_access, accounting_access, customer_user_number, job_title, supervisor_first_name, supervisor_last_name, supervisor_email, inactive_date, sensitive_flag, appeal_assignment_access, abm_catalog_access, abm_read_only_access, version_ind, reset, bvd_special_access, super_pharmacist_access, ABM_Access, User_Created, Date_Time_Created, Form_ID, Recon_Access, Related_User_ID, Supervisor_Phone, Welcome_Email_Sent_Flag, Update_Claim_Data_Flag, Send_Welcome_Email_Flag, ABM_Referral_Read_Only_Access_Flag, RMD_Access_Flag, Customer_User_Group_ID)
@@ -120,16 +120,16 @@ SELECT 7, 'rribble', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'rribble@health
 
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 24, 7, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', '2010-11-16 10:35:53.127', 'dferry', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 25, 7, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', '2010-11-16 10:35:53.127', 'dferry', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 25, 7, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', '2010-11-16 10:35:53.127', 'dferry', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 26, 7, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', '2010-11-16 10:35:53.127', 'dferry', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 26, 7, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', '2010-11-16 10:35:53.127', 'dferry', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 27, 7, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'dferry', '2010-11-16 10:35:53.127', 'dferry', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 27, 7, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 28, 7, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 
 INSERT INTO users(User_ID, user_name, user_pass, email, first_name, last_name, access_denied, touched, do_nothing, last_login_date, login_count, failed_logins, customer_id, roster_access, resolution_access, superuser_access, email_sent, epaq_access, image_access, elig_access, report_access, mail_order_access, manager_access, dme_access, ex02_access, ipe_access, user_manager_access, modified_by, modified_date, phone, cae_access, region, rxcard_access, eob_access, accounting_access, customer_user_number, job_title, supervisor_first_name, supervisor_last_name, supervisor_email, inactive_date, sensitive_flag, appeal_assignment_access, abm_catalog_access, abm_read_only_access, version_ind, reset, bvd_special_access, super_pharmacist_access, ABM_Access, User_Created, Date_Time_Created, Form_ID, Recon_Access, Related_User_ID, Supervisor_Phone, Welcome_Email_Sent_Flag, Update_Claim_Data_Flag, Send_Welcome_Email_Flag, ABM_Referral_Read_Only_Access_Flag, RMD_Access_Flag, Customer_User_Group_ID)
@@ -137,16 +137,16 @@ SELECT 8, 'anavarro', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'msinclair@hea
 
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 28, 8, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 29, 8, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 29, 8, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 30, 8, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 30, 8, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 31, 8, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 31, 8, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 32, 8, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 
 INSERT INTO users(User_ID, user_name, user_pass, email, first_name, last_name, access_denied, touched, do_nothing, last_login_date, login_count, failed_logins, customer_id, roster_access, resolution_access, superuser_access, email_sent, epaq_access, image_access, elig_access, report_access, mail_order_access, manager_access, dme_access, ex02_access, ipe_access, user_manager_access, modified_by, modified_date, phone, cae_access, region, rxcard_access, eob_access, accounting_access, customer_user_number, job_title, supervisor_first_name, supervisor_last_name, supervisor_email, inactive_date, sensitive_flag, appeal_assignment_access, abm_catalog_access, abm_read_only_access, version_ind, reset, bvd_special_access, super_pharmacist_access, ABM_Access, User_Created, Date_Time_Created, Form_ID, Recon_Access, Related_User_ID, Supervisor_Phone, Welcome_Email_Sent_Flag, Update_Claim_Data_Flag, Send_Welcome_Email_Flag, ABM_Referral_Read_Only_Access_Flag, RMD_Access_Flag, Customer_User_Group_ID)
@@ -154,16 +154,16 @@ SELECT 9, 'reanes', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'reanes@healthes
 
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 32, 9, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'reanes', '2010-11-16 10:35:53.127', 'reanes', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 33, 9, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'reanes', '2010-11-16 10:35:53.127', 'reanes', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 33, 9, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'reanes', '2010-11-16 10:35:53.127', 'reanes', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 34, 9, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'reanes', '2010-11-16 10:35:53.127', 'reanes', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 34, 9, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'reanes', '2010-11-16 10:35:53.127', 'reanes', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 35, 9, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'reanes', '2010-11-16 10:35:53.127', 'reanes', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 35, 9, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 36, 9, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 
 INSERT INTO users(User_ID, user_name, user_pass, email, first_name, last_name, access_denied, touched, do_nothing, last_login_date, login_count, failed_logins, customer_id, roster_access, resolution_access, superuser_access, email_sent, epaq_access, image_access, elig_access, report_access, mail_order_access, manager_access, dme_access, ex02_access, ipe_access, user_manager_access, modified_by, modified_date, phone, cae_access, region, rxcard_access, eob_access, accounting_access, customer_user_number, job_title, supervisor_first_name, supervisor_last_name, supervisor_email, inactive_date, sensitive_flag, appeal_assignment_access, abm_catalog_access, abm_read_only_access, version_ind, reset, bvd_special_access, super_pharmacist_access, ABM_Access, User_Created, Date_Time_Created, Form_ID, Recon_Access, Related_User_ID, Supervisor_Phone, Welcome_Email_Sent_Flag, Update_Claim_Data_Flag, Send_Welcome_Email_Flag, ABM_Referral_Read_Only_Access_Flag, RMD_Access_Flag, Customer_User_Group_ID)
@@ -171,16 +171,16 @@ SELECT 10, 'aberry', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'aberrys@health
 
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 36, 10, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'aberry', '2010-11-16 10:35:53.127', 'aberry', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 37, 10, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'aberry', '2010-11-16 10:35:53.127', 'aberry', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 37, 10, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'aberry', '2010-11-16 10:35:53.127', 'aberry', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 38, 10, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'aberry', '2010-11-16 10:35:53.127', 'aberry', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 38, 10, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'aberry', '2010-11-16 10:35:53.127', 'aberry', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 39, 10, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'aberry', '2010-11-16 10:35:53.127', 'aberry', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 39, 10, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 40, 10, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 
 INSERT INTO users(User_ID, user_name, user_pass, email, first_name, last_name, access_denied, touched, do_nothing, last_login_date, login_count, failed_logins, customer_id, roster_access, resolution_access, superuser_access, email_sent, epaq_access, image_access, elig_access, report_access, mail_order_access, manager_access, dme_access, ex02_access, ipe_access, user_manager_access, modified_by, modified_date, phone, cae_access, region, rxcard_access, eob_access, accounting_access, customer_user_number, job_title, supervisor_first_name, supervisor_last_name, supervisor_email, inactive_date, sensitive_flag, appeal_assignment_access, abm_catalog_access, abm_read_only_access, version_ind, reset, bvd_special_access, super_pharmacist_access, ABM_Access, User_Created, Date_Time_Created, Form_ID, Recon_Access, Related_User_ID, Supervisor_Phone, Welcome_Email_Sent_Flag, Update_Claim_Data_Flag, Send_Welcome_Email_Flag, ABM_Referral_Read_Only_Access_Flag, RMD_Access_Flag, Customer_User_Group_ID)
@@ -188,16 +188,16 @@ SELECT 11, 'bribeiro', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'bribeiro@hea
 
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 40, 11, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'bribeiro', '2010-11-16 10:35:53.127', 'bribeiro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 41, 11, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'bribeiro', '2010-11-16 10:35:53.127', 'bribeiro', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 41, 11, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'bribeiro', '2010-11-16 10:35:53.127', 'bribeiro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 42, 11, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'bribeiro', '2010-11-16 10:35:53.127', 'bribeiro', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 42, 11, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'bribeiro', '2010-11-16 10:35:53.127', 'bribeiro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 43, 11, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'bribeiro', '2010-11-16 10:35:53.127', 'bribeiro', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 43, 11, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 44, 11, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
 
 
 -- standard automation user you would find in INT environments
@@ -206,13 +206,13 @@ SELECT 12, 'tst_qaa_svc01', '0a06f72a10a4a572d4e22a951dc1859083e87de5', 'qaqtp01
 
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 44, 12, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 45, 12, 1, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 45, 12, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 46, 12, 2, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 46, 12, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 47, 12, 3, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'tst_qaa_svc01', '2010-11-16 10:35:53.127', 'User Manager';
 
 INSERT INTO User_Role(User_Role_ID, User_ID, Role_ID, Effective_Date, Termination_Date, User_Created, Date_Time_Created, User_Modified, Date_Time_Modified, Form_ID)
-SELECT 47, 12, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
+SELECT 48, 12, 4, '2010-11-16 10:35:53.127', '9999-01-01 00:00:00.000', 'anavarro', '2010-11-16 10:35:53.127', 'anavarro', '2010-11-16 10:35:53.127', 'User Manager';
