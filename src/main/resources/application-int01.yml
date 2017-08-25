@@ -8,9 +8,9 @@ zuul:
     customer-manager-service:
       url: http://red-gateui1i01.test.healthe:8504/
     dm-service:
-      url: http://int-dm-route.hestest.com/dm-service/
+      url: http://red-gateui1i01.test.healthe:8500/dm-service/
     dm-ui:
-      url: http://int-dm-route.hestest.com/dm-ui/
+      url: http://red-gateui1i01.test.healthe:8502/dm-ui/
 spring:
   session:
     store-type: redis
