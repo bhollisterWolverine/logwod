@@ -23,23 +23,34 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
+	
+	<scm>
+        <connection>scm:git:http://srv_jenkins_test@co1-git01sha01.test.healthe:7990/scm/am/internal-gateway.git</connection>
+        <developerConnection>scm:git:http://srv_jenkins_test@co1-git01sha01.test.healthe:7990/scm/am/internal-gateway.git</developerConnection>
+	</scm>
+
+    <repositories>
+        <repository>
+            <id>internal-nexus</id>
+            <url>http://co1-rep01sha01.test.healthe:8080/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+
 	<distributionManagement>
 		<repository>
 			<id>DeploymentRepository</id>
 			<name>Internal Releases</name>
-			<url>
-				http://co1-rep01sha01.test.healthe:8080/nexus/content/repositories/releases/
-			</url>
+			<url>http://co1-rep01sha01.test.healthe:8080/nexus/content/repositories/releases/</url>
 		</repository>
+
 		<snapshotRepository>
 			<id>SnapshotRepository</id>
 			<name>snapshot releases</name>
-			<url>
-				http://co1-rep01sha01.test.healthe:8080/nexus/content/repositories/snapshots/
-			</url>
+			<url>http://co1-rep01sha01.test.healthe:8080/nexus/content/repositories/snapshots/</url>
 			<uniqueVersion>false</uniqueVersion>
 		</snapshotRepository>
 	</distributionManagement>
+
 	<dependencies>
 	
 		<dependency>
