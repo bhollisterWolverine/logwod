@@ -6,7 +6,7 @@ zuul:
     customer-manager:
       url: http://int-uiapps1hr1.test.healthe:8503/customer-manager-service/
     customer-manager-service:
-      url: http://int-uiapps1hr1.test.healthe:8505/customer-manager-ui/
+      url: http://int-uiapps1hr1.test.healthe:8505/
     dm-service:
       url: https://int-dm-route.hestest.com/dm-service/
     dm-ui:

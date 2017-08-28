@@ -20,8 +20,8 @@ spring:
   datasource:
     url: jdbc:sqlserver://sql-uat01.test.healthe:14331;databaseName=HES_Config;
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver 
-    username: DM_App_User
-    password: HgP73*Vm&HNihs73hsNY    
+    username: customer
+    password: bogey8    
 logging:
   level:
     com.healthesystems: DEBUG
