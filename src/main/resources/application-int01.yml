@@ -4,9 +4,9 @@ zuul:
       url: http://red-gateui1i01.test.healthe:8502/ng-test/
       sensitive-headers:
     customer-manager:
-      url: http://red-gateui1i01.test.healthe:8502/
+      url: http://int-uiapps1hr1.test.healthe:8503/customer-manager-service/
     customer-manager-service:
-      url: http://red-gateui1i01.test.healthe:8504/
+      url: http://int-uiapps1hr1.test.healthe:8505/customer-manager-ui/
     dm-service:
       url: https://int-dm-route.hestest.com/dm-service/
     dm-ui:
@@ -20,8 +20,8 @@ spring:
   datasource:
     url: jdbc:sqlserver://sql-int01.test.healthe:14331;databaseName=HES_Config;
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver 
-    username: DM_App_User
-    password: 3zMPVmNuCLGWSikmDNlN    
+    username: customer
+    password: bogey8    
 logging:
   level:
     com.healthesystems: DEBUG
