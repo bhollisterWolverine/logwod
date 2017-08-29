@@ -10,19 +10,19 @@ spring:
   redis:
     host: localhost
     port: 6379   
-#  datasource:
-#    url: jdbc:h2:mem:HES_Config;
-#    driver-class-name: org.h2.Driver
-#    username: sa
-#    password:
-#    initialize: true
-#    schema: classpath:/schema-h2.sql
-#    data: classpath:/data-h2.sql
   datasource:
-    url: jdbc:sqlserver://sql-int01.test.healthe:14331;databaseName=HES_Config;
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    username: customer
-    password: bogey8
+    url: jdbc:h2:mem:HES_Config;
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+    initialize: true
+    schema: classpath:/schema-h2.sql
+    data: classpath:/data-h2.sql
+#  datasource:
+#    url: jdbc:sqlserver://sql-int01.test.healthe:14331;databaseName=HES_Config;
+#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    username: customer
+#    password: bogey8
 logging:
   level:
     com.healthesystems: DEBUG
