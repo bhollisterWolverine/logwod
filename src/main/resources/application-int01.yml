@@ -6,9 +6,9 @@ zuul:
     ng-test:
       url: http://red-gateui1i01.test.healthe:8502/ng-test/
       sensitive-headers:
-    customer-manager:
-      url: http://int-uiapps1hr1.test.healthe:8503/customer-manager-service/
     customer-manager-service:
+      url: http://int-uiapps1hr1.test.healthe:8503/customer-manager-service/
+    customer-manager:
       url: http://int-uiapps1hr1.test.healthe:8505/
     dm-service:
       url: https://int-dm-route.hestest.com/dm-service/
