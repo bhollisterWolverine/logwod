@@ -19,7 +19,7 @@ spring:
     schema: classpath:/schema-h2.sql
     data: classpath:/data-h2.sql
 #  datasource:
-#    url: jdbc:sqlserver://sql-int01.test.healthe:14331;databaseName=HES_Config;
+#    url: jdbc:sqlserver://sql-dev01.test.healthe:14331;databaseName=HES_Config;
 #    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
 #    username: customer
 #    password: bogey8
