@@ -13,7 +13,7 @@ zuul:
     claim-manager-service:
       url: http://int-uiapps1hr1.test.healthe:8506/claim-manager-service/
     claim-manager:
-      url: http://int-uiapps1hr1/test/healthe:8508/
+      url: http://int-uiapps1hr1.test.healthe:8508/
     dm-service:
       url: https://int-dm-route.hestest.com/dm-service/
     dm-ui:
