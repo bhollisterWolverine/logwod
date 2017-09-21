@@ -1,28 +1,40 @@
 zuul:
+  host:
+    connect-timeout-millis: 60000 # starting the connection 
+    socket-timeout-millis: 120000  # monitor the continuous incoming data flow
   routes:
+    customer-manager-service:
+      url: http://localhost:8085/
+    customer-manager:
+      url: http://localhost:4200/
+    claim-manager-service:
+      url: http://localhost:8085/
+    claim-manager:
+      url: http://localhost:4200/
     dm-service:
       url: http://localhost:8080/dm-service/
     dm-ui:
       url: http://localhost:4200/
+    
 spring:
   session:
     store-type: redis
   redis:
     host: localhost
     port: 6379   
-  datasource:
-    url: jdbc:h2:mem:HES_Config;
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
-    initialize: true
-    schema: classpath:/schema-h2.sql
-    data: classpath:/data-h2.sql
 #  datasource:
-#    url: jdbc:sqlserver://sql-dev01.test.healthe:14331;databaseName=HES_Config;
-#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-#    username: customer
-#    password: bogey8
+#    url: jdbc:h2:mem:HES_Config;
+#    driver-class-name: org.h2.Driver
+#    username: sa
+#    password:
+#    initialize: true
+#    schema: classpath:/schema-h2.sql
+#    data: classpath:/data-h2.sql
+  datasource:
+    url: jdbc:sqlserver://sql-dev01.test.healthe:14331;databaseName=HES_Config;
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: customer
+    password: bogey8
 logging:
   level:
     com.healthesystems: DEBUG

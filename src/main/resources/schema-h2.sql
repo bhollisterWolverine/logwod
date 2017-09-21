@@ -1,6 +1,6 @@
 
 
-CREATE TABLE IF NOT EXISTS users(
+CREATE TABLE IF NOT EXISTS Users(
 	User_ID int IDENTITY(1,1) NOT NULL PRIMARY KEY,
 	user_name varchar(100) NOT NULL,
 	user_pass varchar(50) NOT NULL,
@@ -97,4 +97,41 @@ CREATE TABLE User_Role(
  CONSTRAINT PK_User_Role PRIMARY KEY  
 (
 	User_Role_ID ASC
+));
+
+
+CREATE TABLE User_Category(
+	User_Category_ID int IDENTITY(1,1) NOT NULL,
+	Customer_ID varchar(50) NOT NULL,
+	User_Category_Code varchar(50) NOT NULL,
+	User_Category_Description varchar(850) NOT NULL,
+	Available_Row_Flag varchar(1) NULL,
+	Active_Flag varchar(1) NOT NULL,
+	Effective_Date datetime NOT NULL,
+	Termination_Date datetime NOT NULL,
+	User_Created varchar(100) NOT NULL,
+	Date_Time_Created datetime NOT NULL,
+	User_Modified varchar(100) NOT NULL,
+	Date_Time_Modified datetime NOT NULL,
+	Form_ID varchar(128) NOT NULL,
+	InternalRowVersion timestamp NULL,
+	Is_User_Manager_Hidden varchar(1) NOT NULL,
+	CONSTRAINT PK_User_Category PRIMARY KEY  
+(
+	User_Category_ID ASC
+));
+
+CREATE TABLE Users_By_User_Category(
+	Users_By_User_Category_ID int IDENTITY(1,1) NOT NULL,
+	User_Category_ID int NOT NULL,
+	User_ID int NOT NULL,
+	User_Created varchar(100) NOT NULL,
+	Date_Time_Created datetime NOT NULL,
+	User_Modified varchar(100) NOT NULL,
+	Date_Time_Modified datetime NOT NULL,
+	Form_ID varchar(128) NOT NULL,
+	InternalRowVersion timestamp NULL,
+ CONSTRAINT PK_Users_By_User_Category PRIMARY KEY  
+(
+	Users_By_User_Category_ID ASC
 ));

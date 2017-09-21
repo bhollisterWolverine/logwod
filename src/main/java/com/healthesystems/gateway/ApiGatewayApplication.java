@@ -15,14 +15,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
-@Controller
+@RestController
 @SpringBootApplication
 @EnableZuulProxy
 public class ApiGatewayApplication  {
@@ -31,8 +27,7 @@ public class ApiGatewayApplication  {
 		SpringApplication.run(ApiGatewayApplication.class, args);
 	}
 	
-	@RequestMapping("/user")
-	@ResponseBody
+	@GetMapping("/user")
 	public Map<String, Object> user(Principal user) {
 		Map<String, Object> map = new LinkedHashMap<String, Object>();
 		map.put("name", user.getName());
@@ -41,7 +36,17 @@ public class ApiGatewayApplication  {
 		return map;
 	}
 	
-
+	@GetMapping("/userprofile")
+	public Map<String, Object> userprofile(Principal user) {
+		Map<String, Object> response = new LinkedHashMap<String, Object>();
+		Map<String, Object> usermap = new LinkedHashMap<String, Object>();
+		usermap.put("name", user.getName());
+		usermap.put("roles", AuthorityUtils.authorityListToSet(((Authentication) user).getAuthorities()));
+		
+		response.put("data", usermap);
+		return response;
+	}
+	
 		
 	@Bean
 	@Primary
@@ -49,4 +54,5 @@ public class ApiGatewayApplication  {
 	public DataSource primaryDataSource() {
 	    return DataSourceBuilder.create().build();
 	}
+	
 }

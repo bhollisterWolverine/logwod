@@ -3,10 +3,18 @@ zuul:
     connect-timeout-millis: 60000 # starting the connection 
     socket-timeout-millis: 120000  # monitor the continuous incoming data flow
   routes:
+    customer-manager:
+      url: https://pqa-customer-manager-static.hestest.com/
+    customer-manager-service:
+      url: https://pqa-customer-manager-svc.hestest.com/
+    claim-manager:
+      urL: https://pqa-claim-manager-static.hestest.com/
+    claim-manager-service:
+      url: https://pqa-claim-manager-svc.hestest.com/
     dm-service:
-      url: http://pqa-abmdm1hr1.test.healthe:8500/dm-service/
+      url: https://pqa-dm-route.hestest.com/dm-service/
     dm-ui:
-      url: http://pqa-abmdm1hr1.test.healthe:8502/dm-ui/
+      url: https://pqa-dm-route.hestest.com/dm-ui/
 spring:
   session:
     store-type: redis

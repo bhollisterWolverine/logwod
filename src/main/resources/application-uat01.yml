@@ -7,13 +7,18 @@ zuul:
       url: http://red-gateui1u01.test.healthe:8502/ng-test/
       sensitive-headers:
     customer-manager:
-      url: http://red-gateui1u01.test.healthe:8502/
+      url: https://uat-customer-manager-static.hestest.com/
     customer-manager-service:
-      url: http://red-gateui1u01.test.healthe:8504/
+      url: https://uat-customer-manager-svc.hestest.com/
+    claim-manager:
+      url: https://uat-claim-manager-static.hestest.com/
+    claim-manager-service:
+      url: https://uat-claim-manager-svc.hestest.com/
     dm-service:
-      url: http://red-abmdm1u01.test.healthe:8500/dm-service/
+      url: https://uat-dm-route.hestest.com/dm-service/
     dm-ui:
-      url: http://red-abmdm1u01.test.healthe:8502/dm-ui/
+      url: https://uat-dm-route.hestest.com/dm-ui/
+    
 spring:
   session:
     store-type: redis

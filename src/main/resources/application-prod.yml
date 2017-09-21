@@ -3,10 +3,18 @@ zuul:
     connect-timeout-millis: 60000 # starting the connection 
     socket-timeout-millis: 120000  # monitor the continuous incoming data flow
   routes:
+    customer-manager:
+      url: https://customer-manager-static.healthesystems.com/
+    customer-manager-service:
+      url: https://customer-manager-svc.healthesystems.com/
+    claim-manager:
+      url: https://claim-manager-static.healthesystems.com/
+    claim-manager-service:
+      url: https://claim-manager-svc.healthesystems.com/
     dm-service:
-      url: http://prd-abmdm1hr1.test.healthe:8500/dm-service/
+      url: https://dm-route.healthesystems.com/dm-service/
     dm-ui:
-      url: http://prd-abmdm1hr1.test.healthe:8502/dm-ui/
+      url: https://dm-route.healthesystems.com/dm-ui/
 spring:
   session:
     store-type: redis
