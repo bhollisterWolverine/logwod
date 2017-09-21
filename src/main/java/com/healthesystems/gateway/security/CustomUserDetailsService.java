@@ -43,8 +43,8 @@ public class CustomUserDetailsService extends JdbcDaoImpl {
             + "    WHERE u.user_name = @username " 
             + "    UNION "
             + " SELECT u.user_name AS user_name, uc.User_Category_Code AS role_name "
-            + "    FROM User_Category uc "
-            + "    INNER JOIN Users_By_User_Category ubuc ON ubuc.User_Category_ID = uc.User_Category_ID "
+            + "    FROM [Customer].[dbo].[User_Category] uc "
+            + "    INNER JOIN [Customer].[dbo].[Users_By_User_Category] ubuc ON ubuc.User_Category_ID = uc.User_Category_ID "
             + "    INNER JOIN Users u ON u.User_ID = ubuc.User_ID "
             + "    WHERE u.user_name = @username "  
     )
