@@ -7,13 +7,13 @@ zuul:
       url: http://red-gateui1u01.test.healthe:8502/ng-test/
       sensitive-headers:
     customer-manager:
-      url: https://uat-customer-manager-static.hestest.com/
+      url: https://uat-customer-manager-static.hestest.com/customer-manager-ui/
     customer-manager-service:
-      url: https://uat-customer-manager-svc.hestest.com/
+      url: https://uat-customer-manager-svc.hestest.com/customer-manager-service/
     claim-manager:
-      url: https://uat-claim-manager-static.hestest.com/
+      url: https://uat-claim-manager-static.hestest.com/claim-manager-ui/
     claim-manager-service:
-      url: https://uat-claim-manager-svc.hestest.com/
+      url: https://uat-claim-manager-svc.hestest.com/claim-manager-service/
     dm-service:
       url: https://uat-dm-route.hestest.com/dm-service/
     dm-ui:
