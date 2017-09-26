@@ -4,13 +4,13 @@ zuul:
     socket-timeout-millis: 120000  # monitor the continuous incoming data flow
   routes:
     customer-manager:
-      url: https://pqa-customer-manager-static.hestest.com/
+      url: https://pqa-customer-manager-static.hestest.com/customer-manager-ui/
     customer-manager-service:
-      url: https://pqa-customer-manager-svc.hestest.com/
+      url: https://pqa-customer-manager-svc.hestest.com/customer-manager-service/
     claim-manager:
-      urL: https://pqa-claim-manager-static.hestest.com/
+      url: https://pqa-claim-manager-static.hestest.com/claim-manager-ui/
     claim-manager-service:
-      url: https://pqa-claim-manager-svc.hestest.com/
+      url: https://pqa-claim-manager-svc.hestest.com/claim-manager-service/
     dm-service:
       url: https://pqa-dm-route.hestest.com/dm-service/
     dm-ui:

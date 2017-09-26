@@ -4,13 +4,13 @@ zuul:
     socket-timeout-millis: 120000  # monitor the continuous incoming data flow
   routes:
     customer-manager:
-      url: https://customer-manager-static.healthesystems.com/
+      url: https://customer-manager-static.healthesystems.com/customer-manager-ui/
     customer-manager-service:
-      url: https://customer-manager-svc.healthesystems.com/
+      url: https://customer-manager-svc.healthesystems.com/customer-manager-service/
     claim-manager:
-      url: https://claim-manager-static.healthesystems.com/
+      url: https://claim-manager-static.healthesystems.com/claim-manager-ui/
     claim-manager-service:
-      url: https://claim-manager-svc.healthesystems.com/
+      url: https://claim-manager-svc.healthesystems.com/claim-manager-service/
     dm-service:
       url: https://dm-route.healthesystems.com/dm-service/
     dm-ui:
