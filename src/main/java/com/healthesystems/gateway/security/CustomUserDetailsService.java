@@ -28,7 +28,7 @@ public class CustomUserDetailsService extends JdbcDaoImpl {
 	}
 
 	@Override
-	@Value("select * from users where user_name = ?")
+	@Value("select * from [Customer].[dbo].[users] where user_name = ?")
 	public void setUsersByUsernameQuery(String usersByUsernameQueryString) {
 		super.setUsersByUsernameQuery(usersByUsernameQueryString);
 	}
