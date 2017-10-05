@@ -39,13 +39,13 @@ public class CustomUserDetailsService extends JdbcDaoImpl {
 			+ " SELECT u.user_name as user_name,  r.Role_name role_name"
             + "    FROM Role r "
             + "    INNER JOIN User_Role ur ON ur.Role_ID = r.Role_ID "
-            + "    INNER JOIN Users u ON u.User_ID = ur.User_ID "
+            + "    INNER JOIN [Customer].[dbo].[Users] u ON u.User_ID = ur.User_ID "
             + "    WHERE u.user_name = @username " 
             + "    UNION "
             + " SELECT u.user_name AS user_name, uc.User_Category_Code AS role_name "
             + "    FROM [Customer].[dbo].[User_Category] uc "
             + "    INNER JOIN [Customer].[dbo].[Users_By_User_Category] ubuc ON ubuc.User_Category_ID = uc.User_Category_ID "
-            + "    INNER JOIN Users u ON u.User_ID = ubuc.User_ID "
+            + "    INNER JOIN [Customer].[dbo].[Users] u ON u.User_ID = ubuc.User_ID "
             + "    WHERE u.user_name = @username "  
     )
 	public void setAuthoritiesByUsernameQuery(String queryString) {
