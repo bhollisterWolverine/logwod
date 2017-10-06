@@ -24,7 +24,7 @@ spring:
   datasource:
     url: jdbc:sqlserver://SQL-oltp1.tampa.healthe:1433;databaseName=HES_Config;
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver 
-    username: customer
+    username: IntGatewayUser
     password: 8#6W%Vcb-s7kkP&t   
 logging:
   level:
